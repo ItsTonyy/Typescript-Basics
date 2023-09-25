@@ -8,5 +8,12 @@ console.log(`Hexadecimal: ${num2}`)
 console.log(`Octal: ${num3}`)
 console.log(`Binário: ${num4}`)
 
+// Exemples BigInt => 
+
+const big1: bigint = 9007199254740991n
+console.log(big1)
+
+export {}
+
 
 

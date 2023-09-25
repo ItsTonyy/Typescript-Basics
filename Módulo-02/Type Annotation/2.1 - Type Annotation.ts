@@ -18,6 +18,4 @@ carro = {modelo: 'Ford Focus', ano: 2020, preco: 60000}
 console.log(carro)
 // => functions [type annotations] 
 
-
-
 export {}
