@@ -43,4 +43,14 @@ function criarPessoa(...nome: Nome) {
 let humanName = criarPessoa('Tony', 'Terra Nova', 'Portela')
 console.log(humanName)
 
+
+// Final Output: 
+/* [ 'Tony', 'Dev Junior', 20 ]
+Dev Junior
+[ 'Tony', 'Dev Junior', 20 ]
+[ '🍇', '🍉', '🍊', '🍌' ]
+[ 5, true, '🍇', '🍉', '🍊', '🍌' ]
+[ 'Tony', 'Ademir', 20, 63 ]
+[ 'Tony', 'Terra Nova', 'Portela' ] */
+
 export {}
