@@ -10,3 +10,4 @@ function extractProperty(data, property) {
 // as we change the property, the type of the variable "Val" changes too, adapting to the type of the property
 const val = extractProperty(course, "lessonCounts");
 console.log(val);
+const key = 'name';
