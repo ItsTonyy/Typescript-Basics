@@ -7,3 +7,4 @@ function PreçoFinal(value, discount, format) {
 }
 const productPrice = PreçoFinal(100, 0.5, true);
 console.log(productPrice);
+// ==> Exemplo 2: Const Assertions

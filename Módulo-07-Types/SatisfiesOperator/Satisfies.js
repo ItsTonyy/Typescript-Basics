@@ -1,5 +1,6 @@
+"use strict";
 // ==> Exemplo 01: Satisfies Operator
-var pessoa1 = {
+const pessoa1 = {
     birthLocation: 'Rio de Janeiro',
     currentResidence: { x: 1, y: 1 }
 };
