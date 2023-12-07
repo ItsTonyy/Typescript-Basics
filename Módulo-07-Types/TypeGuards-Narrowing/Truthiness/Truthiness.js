@@ -1,6 +1,7 @@
+"use strict";
 function getUsersOnline(usersOnline) {
     if (usersOnline) {
-        return "There are ".concat(usersOnline, " users online now.");
+        return `There are ${usersOnline} users online now.`;
     }
     return "nobody's here. :(";
 }

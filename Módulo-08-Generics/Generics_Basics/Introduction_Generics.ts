@@ -1,3 +1,5 @@
+// the "hellor world of generics"
+
 function identity <T>(arg: T): T {
   return arg
 }
@@ -5,6 +7,12 @@ function identity <T>(arg: T): T {
 let output = identity<string>('foo')
 console.log(output)
 
-const randomArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// Generics in arrays
 
-const filteredArray = randomArray.filter(x => x < 5)
+function returnArray<T>(arg: T[]): T[] {
+  console.log(arg.length)
+  return arg
+}
+
+returnArray([1, 2, 3, 4, 5])
+returnArray(['apple', 'banana', 'strawberry'])
