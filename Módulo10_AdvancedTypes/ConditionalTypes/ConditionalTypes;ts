@@ -1,0 +1,38 @@
+// ==> Example1: The basics
+interface animal {
+  live(): void
+}
+
+interface dog extends animal {
+  woof(): void
+}
+
+type AnimalDog = dog extends animal ? string : null
+
+
+// ==> Example2: Conditional Types with Generics
+
+interface IdLabel {
+  id: number
+}
+
+interface NameLabel {
+  name: string
+}
+
+function createLabelWrong(id: number): IdLabel {}
+function createLabelWrong(name:string) : NameLabel
+
+// instead, we can use generics and conditional types together
+
+type NameOrId<T extends number | string> = T extends number ? IdLabel : NameLabel
+
+function createLabel<T extends number | string>(idOrName: T):NameOrId<T> {
+  throw 'unimplemented'
+}
+
+// type Namelabel
+let a = createLabel('Typescript')
+
+// type IdLabel
+let b = createLabel(2003)
